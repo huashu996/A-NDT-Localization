@@ -18,7 +18,7 @@
   <arg name="base_frame" default="base_link" doc="Vehicle reference frame" />
 
   <arg name="trans_epsilon" default="0.0001" doc="The maximum difference between two consecutive transformations in order to consider convergence" />
-  <arg name="step_size" default="0.1" doc="The newton line search maximum step length" />
+  <arg name="step_size" default="0.25" doc="The newton line search maximum step length" />
   <arg name="resolution" default="2.0" doc="The ND voxel grid resolution" />
   <arg name="max_iterations" default="30.0" doc="The number of iterations required to calculate alignment" />
   <arg name="converged_param_transform_probability" default="0.7" doc="" />

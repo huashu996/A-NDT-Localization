@@ -138,7 +138,7 @@ Visualization Manager:
       top: 40
       update interval: 0.10000000149011612
       width: 128
-    - Alpha: 0.5
+    - Alpha: 0.30000001192092896
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
         Max Value: 50.08354949951172
@@ -189,7 +189,7 @@ Visualization Manager:
       Size (Pixels): 1
       Size (m): 0.009999999776482582
       Style: Points
-      Topic: /os1_points
+      Topic: /zvlidar_exciton_points_xyzi
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -203,7 +203,7 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud2
-      Color: 252; 233; 79
+      Color: 252; 248; 106
       Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
@@ -246,7 +246,7 @@ Visualization Manager:
     - Alpha: 1
       Buffer Length: 2
       Class: rviz/Path
-      Color: 25; 255; 0
+      Color: 85; 255; 255
       Enabled: true
       Head Diameter: 0.30000001192092896
       Head Length: 0.20000000298023224
@@ -295,7 +295,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 167.3772735595703
+      Distance: 166.55345153808594
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -303,8 +303,8 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 6.174022674560547
-        Y: 3.564730167388916
+        X: 2.169379711151123
+        Y: 19.09451675415039
         Z: -1.4952658602851443e-05
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
@@ -313,7 +313,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: base_link
-      Yaw: 6.2554612159729
+      Yaw: 6.259778022766113
     Saved: ~
 Window Geometry:
   Displays:

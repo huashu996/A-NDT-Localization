@@ -149,15 +149,16 @@ void NdtLocalizer::callback_pointcloud(
     *sensor_points_sensorTF_ptr, *sensor_points_baselinkTF_ptr, base_to_sensor_matrix);
   
   // set input point cloud
-  // A_factor*2.5   0.25*A_factor 目前最好 4000  0.00001  map 0.3
-   // A_factor*3.0   0.3*A_factor 目前最好 8000  0.0001  map 0.3
-  double Resolution = A_factor*3.0;
-  double StepSize = 0.3*A_factor;
-  ndt_.setStepSize(StepSize);
+  // A_factor*2.5   0.25*A_factor  4000  0.00001  map 0.3
+  // A_factor*3.0   0.3*A_factor  8000  0.0001  map 0.3
+  // A_factor*2.8   step定值0.25  8000  0.0001  map 0.3   BEST
+  double Resolution = A_factor*2.8;
+  //double StepSize = 0.28*A_factor;
+  //ndt_.setStepSize(StepSize);
   ndt_.setResolution(Resolution);
   ndt_.setInputSource(sensor_points_baselinkTF_ptr);
   cout<<"Resolution------------"<<Resolution<<endl;
-  cout<<"StepSize------------"<<StepSize<<endl;
+  //cout<<"StepSize------------"<<StepSize<<endl;
  
   if (ndt_.getInputTarget() == nullptr) {
     ROS_WARN_STREAM_THROTTLE(1, "No MAP!");

@@ -22,7 +22,7 @@
 
     <!--- MapLoader -->    
     <arg name="pcd_path"  default="$(find ndt_localizer)/map/kaiwo_0.3.pcd"/>
-    <!-- <arg name="pcd_path"  default="/media/rdcas/dataset/map_result/kaist02.pcd"/> -->
+    <!-- <arg name="pcd_path"  default="/media/rdcas/dataset/map_result/kaist02.pcd  kaiwo_0.3.pcd"/> -->
     
     <arg name="map_topic" default="/points_map"/>
 
